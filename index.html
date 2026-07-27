@@ -74,9 +74,14 @@
         .mitad.vertical {
             flex-direction: column;
             gap: 2vh;
-        }
+        }   
 
-        .titulo {}
+        .noticia .titulo::before {
+            content: "Noticia";
+            bottom: calc(100% + 1rem);
+            position: absolute;
+            color: rgb(247, 160, 48);
+        }
 
         #barra-naranga {
             width: 100%;
@@ -147,6 +152,7 @@
             text-shadow: 2px 2px 2px rgba(16, 8, 6, 0.5);
             font-weight: 700;
             font-size: 3rem;
+            position: relative;
         }
         .resumen{
             color: white;
