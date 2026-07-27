@@ -1,14 +1,16 @@
 <html>
-<head> 
-     
+
+<head>
+
 </head>
+
 <body>
-<div id="cabecera">
-    <div id="barra-naranga"></div>
-    <div id="barra-transparente"></div>
-    <div id="contenedor-de-logo"></div>
-</div>      
-    <div id="contenedor-de-noticias">    
+    <div id="cabecera">
+        <div id="barra-naranga"></div>
+        <div id="barra-transparente"></div>
+        <div id="contenedor-de-logo"></div>
+    </div>
+    <div id="contenedor-de-noticias">
         <div class="noticia" style="background-image: url(fotos-noticias/programadores.jpg);">
             <div class="mitad vertical">
                 <h2 class="titulo">
@@ -16,87 +18,97 @@
                 </h2>
                 <p class="resumen">
                     Joaquin esta trabajando en un videojuego de plataforma donde pronto lo veremos.
-    
+
                 </p>
             </div>
-            
+
             <div class="mitad">
-            
+
             </div>
         </div>
 
     </div>
     <div id="pie">
-<div class="botonsitos">Anteriormente</div>
-<div class="botonsitos">Noticias</div>
-<div class="botonsitos">Ultima hora</div>
-    </div> 
-    
+        <div class="botonsitos">Anteriormente</div>
+        <div class="botonsitos">Noticias</div>
+        <div class="botonsitos">Ultima hora</div>
+    </div>
+
     <style>
-        body{
+        body {
             padding: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
             height: 100vh;
             overflow-y: hidden;
+            font-size: 18px;
         }
-        #cabecera{
-flex-shrink: 0;
-z-index: 1;
-position: relative;
+
+        #cabecera {
+            flex-shrink: 0;
+            z-index: 1;
+            position: relative;
         }
-        #contenedor-de-noticias{
+
+        #contenedor-de-noticias {
             flex-grow: 1;
         }
-        .noticia{
+
+        .noticia {
             height: 100%;
             background-position: center;
             background-size: cover;
             position: relative;
             display: flex;
         }
-        .mitad{
-            flex-basis: 50%;    
-            
+
+        .mitad {
+            flex-basis: 50%;
+
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .mitad.vertical{
-            flex-direction: column;
-            gap: 10vh;
-        }
-        .titulo{
 
+        .mitad.vertical {
+            flex-direction: column;
+            gap: 2vh;
         }
-        #barra-naranga{
+
+        .titulo {}
+
+        #barra-naranga {
             width: 100%;
-            height: 5vh; 
+            height: 5vh;
             background-color: rgb(228, 158, 77);
         }
-        #barra-transparente{
-            width:100%;
+
+        #barra-transparente {
+            width: 100%;
             height: 61px;
             background-color: rgba(0, 0, 0, 0.384);
 
             position: absolute;
         }
-        #foto{
+
+        #foto {
             width: 100%;
-            
+
         }
-        #contenedor-de-imagen{
+
+        #contenedor-de-imagen {
             background-image: url(programadores.jpg);
             width: 100%;
             height: 95vh;
             background-position: center;
             background-size: cover;
         }
-        #pie{
+
+        #pie {
             width: 100%;
             height: 70px;
-            
+
             position: fixed;
             bottom: 0px;
             display: flex;
@@ -104,7 +116,8 @@ position: relative;
             align-items: center;
             gap: 20px;
         }
-        .botonsitos{
+
+        .botonsitos {
             width: 50%;
             height: 50px;
             background-color: rgb(250, 172, 84);
@@ -118,14 +131,28 @@ position: relative;
             font-weight: 900;
             font-family: "Poppins", sans-serif;
         }
-        #contenedor-de-logo{
+
+        #contenedor-de-logo {
             background-image: url(logo.png);
-            width: 10.4%;
-            height: 155px;
+            background-position: center;
+            width: 180px;
+            height: 148.5px;
             position: absolute;
             background-color: rgb(255, 255, 255);
             left: 495px;
-            z-index:1000;
+            z-index: 1000;
+        }
+        .titulo{
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px rgba(16, 8, 6, 0.5);
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        .resumen{
+            color: white;
+            text-shadow: 2px 2px 2px rgba(16, 8, 6, 0.5);
+            font-weight: 200;
+            font-size: 1rem;
         }
     </style>
 </body>
