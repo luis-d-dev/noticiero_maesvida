@@ -1,13 +1,20 @@
 <html>
 
 <head>
-
+   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div id="cabecera">
         <div id="barra-naranga"></div>
-        <div id="barra-transparente"></div>
+        <div id="barra-transparente">
+        <nav>  
+            <ul class="nav-links">
+            <li><a href="#">inicio</a></li>
+            <li><a href="#en vivo">en vivo</a></li>
+            <li><a href="#contacto">contacto</a></li>
+        </nav>
+        </div>
         <div id="contenedor-de-logo"></div>
     </div>
     <div id="contenedor-de-noticias">
@@ -52,153 +59,7 @@
     </div>
 
     <style>
-        body {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow-y: hidden;
-            font-size: 18px;
-        }
-
-        #cabecera {
-            flex-shrink: 0;
-            z-index: 1;
-            position: relative;
-        }
-
-        #contenedor-de-noticias {
-            flex-grow: 1;
-        }
-
-        .noticia {
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            display: flex;
-        }
-
-        .mitad {
-            flex-basis: 50%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mitad.vertical {
-            flex-direction: column;
-            gap: 2vh;
-        }   
-
-        .noticia .titulo::before {
-            content: "Noticia";
-            font-family: none;
-            bottom: calc(100% + 1rem);
-            position: absolute;
-            color: rgb(247, 160, 48);
-            font-weight: 30;
-            font-size: 40px;
-
-        }
-
-        #barra-naranga {
-            width: 100%;
-            height: 5vh;
-            background-color: rgb(228, 158, 77);
-        }
-
-        #barra-transparente {
-            width: 100%;
-            height: 61px;
-            background-color: rgba(0, 0, 0, 0.384);
-
-            position: absolute;
-        }
-
-        #foto {
-            width: 100%;
-
-        }
-
-        #contenedor-de-imagen {
-            background-image: url(programadores.jpg);
-            width: 100%;
-            height: 95vh;
-            background-position: center;
-            background-size: cover;
-        }
-
-        #pie {
-            width: 100%;
-            height: 70px;
-
-            position: fixed;
-            bottom: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .botonsitos {
-            width: 50%;
-            height: 50px;
-            background-color: rgb(250, 172, 84);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 0;
-            width: 357px;
-            color: rgb(255, 255, 255);
-            font-size: 19px;
-            font-weight: 900;
-            font-family: "Poppins", sans-serif;
-            border-radius: 20px;
-        }
-
-        .botonsitos:hover{
-            background-color: #f28f3c;
-
-        }
-        #contenedor-de-logo {
-            background-image: url(logo.png);
-            background-position: center;
-            width: 180px;
-            height: 148.5px;
-            position: absolute;
-            background-color: rgb(255, 255, 255);
-            left: 495px;
-            z-index: 1000;
-        }
-        .titulo{
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 2px rgba(16, 8, 6, 0.5);
-            font-weight: 1000;
-            font-size: 3rem;
-            position: relative;
-            font-family: "Poppins", sans-serif;
-        }
-        .resumen{
-            color: white;
-            text-shadow: 2px 2px 2px rgba(16, 8, 6, 0.5);
-            font-weight: 200;
-            font-size: 1rem;
-
-
-        }
-        .links{
-            text-decoration: none;
-            color: whitesmoke;
-        }
-        .links:visited{
-            color: whitesmoke;
-        }
-        .links:hover{
-            color: whitesmoke
-        }
+       
     </style>
 </body>
 
