@@ -1,7 +1,13 @@
-<html>
+<!doctype html>
+<html lang="es">
 
 <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Noticiero Maesvida</title>
    <link rel="stylesheet" href="styles.css">
+   <script src="noticias/noticias-generadas.js" defer></script>
+   <script src="cargar-noticias.js" defer></script>
 </head>
 
 <body>
@@ -13,39 +19,14 @@
             <li><a href="#">inicio</a></li>
             <li><a href="#en vivo">en vivo</a></li>
             <li><a href="#contacto">contacto</a></li>
+            </ul>
         </nav>
         </div>
         <div id="contenedor-de-logo"></div>
     </div>
-    <div id="contenedor-de-noticias">
-        <div class="noticia" style="background-image: url(fotos-noticias/programadores.jpg);">
-            <div class="mitad vertical">
-                <h2 class="titulo">
-                    se acerca el lanzamiento
-                </h2>
-                <p class="resumen">
-                    Joaquin esta trabajando en un videojuego de plataforma donde pronto lo veremos.
-                </p>
-            </div>
-
-            <div class="mitad">
-
-            </div>
-        </div>
-
-        <div class="noticia" style="background-image: url(fotos-noticias/samuelNoticia.jpg);">
-            <div class="mitad vertical">
-                <h2 class="titulo">
-			El cable inesperado
-                </h2>
-                <p class="resumen">
-		Un arborista despistado se encontraba podando una enorma planta de veranera sin saber lo que se escondía entre las ramas...
-            </div>
-            <div class="mitad">
-            </div>
-        </div>
-
-    </div>
+    <main id="contenedorNoticias" aria-live="polite">
+        <p class="estado-noticias">Cargando noticias…</p>
+    </main>
     <div id="pie">
         <div class="botonsitos">
             <a class="links" href="#">Anteriormente</a>
@@ -58,9 +39,6 @@
         </div>
     </div>
 
-    <style>
-       
-    </style>
 </body>
 
 

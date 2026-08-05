@@ -14,16 +14,34 @@
             position: relative;
         }
 
-        #contenedor-de-noticias {
+        #contenedorNoticias {
             flex-grow: 1;
+            min-height: 0;
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            overscroll-behavior-x: contain;
+        }
+
+        .estado-noticias {
+            padding: 3rem;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
         }
 
         .noticia {
             height: 100%;
+            min-width: 100%;
             background-position: center;
             background-size: cover;
             position: relative;
             display: flex;
+            color: inherit;
+            text-decoration: none;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
         }
 
         .mitad {
@@ -37,7 +55,9 @@
         .mitad.vertical {
             flex-direction: column;
             gap: 2vh;
-        }   
+	    padding: 0px 10%;
+	    align-items: baseline;
+        }
 
         .noticia .titulo::before {
             content: "Noticia";
@@ -134,6 +154,20 @@
             font-size: 1rem;
 
 
+        }
+        .leer-mas {
+            align-self: flex-start;
+            padding: 0.75rem 1.25rem;
+            border-radius: 20px;
+            background-color: rgb(250, 172, 84);
+            color: white;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+        }
+        .leer-mas:hover,
+        .leer-mas:focus-visible {
+            background-color: #f28f3c;
         }
         .links{
             text-decoration: none;
